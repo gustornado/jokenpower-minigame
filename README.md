@@ -49,7 +49,6 @@ etc
 - Acaba quando a vida de um dos jogadores chega a 0
 
 ## Exemplos
-|||||||||||
-|---|---|---|---|---|---|---|---|---|---|
 |Pedra|Pedra|Pedra|Pedra|Pedra|Pedra|Pedra|Pedra|Pedra|Pedra|
+|---|---|---|---|---|---|---|---|---|---|
 |10|10|10|10|10|10|10|10|10|10|
