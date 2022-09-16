@@ -6,6 +6,13 @@ class Attack:
         self.participant = participant
         self.type = type
         self.start = start
-        self.duration = JOKENPO_UNITS[type]['duration']
+        self.is_reaction = False
         self.damage = JOKENPO_UNITS[type]['damage']
-        self.exposed_time = JOKENPO_UNITS[type]['exposed_time']
+        self.damage_countered = JOKENPO_UNITS[type]['damage_countered']
+        self.weakness = JOKENPO_UNITS[type]['weakness']
+        self.duration = JOKENPO_UNITS[type]['duration']
+        self.end = start + JOKENPO_UNITS[type]['duration']
+        self.invulnerable_time = start + JOKENPO_UNITS[type]['invulnerable_time']
+
+    def set_reaction(self, is_reaction: bool):
+        self.is_reaction = is_reaction
