@@ -1,6 +1,6 @@
 from core.config.types import ParticipantType, KeyType, AttackType
 from typing import Callable
-from core.aux.attack import Attack
+from core.auxiliar.attack import Attack
 from core.participant import Participant
 from core.conflict_manager import ConflictManager
 

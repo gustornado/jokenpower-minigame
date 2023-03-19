@@ -2,14 +2,16 @@ import csv
 import os.path
 from datetime import datetime
 from core.config.types import ParticipantType
-from core.aux.attack import Attack
+from core.auxiliar.attack import Attack
 
 class Save:
     def __init__(self):
         self.cache = []
         self.cache_size = 10
-        self.filename = 'attacks_pattern.csv'
-        self.fieldnames = ['timestamp', 'time_since_start', 'player_type', 'attack_type', 'damage', 'is_counter_attack']
+        absolute_path = os.path.abspath(os.path.dirname(__file__))
+        self.filename = os.path.join(absolute_path, '..', 'ml', 'attacks_pattern.csv')
+        # self.filename = 'attacks_pattern.csv'
+        self.fieldnames = ['timestamp', 'time_since_start', 'damaged_player', 'attack_type', 'damage', 'is_counter_attack']
         self.file_exists = os.path.isfile(self.filename)
     
     
@@ -33,7 +35,7 @@ class Save:
         return {
             'timestamp'         : datetime.now(),
             'time_since_start'  : time_since_start,
-            'player_type'       : participant.value,
+            'damaged_player'    : participant.value,
             'attack_type'       : attack.type.value,
             'damage'            : damage,
             'is_counter_attack' : attack.is_reaction

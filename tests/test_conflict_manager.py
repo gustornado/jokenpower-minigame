@@ -1,5 +1,5 @@
 from core.conflict_manager import ConflictManager
-from core.aux.attack import Attack
+from core.auxiliar.attack import Attack
 from core.config.types import ParticipantType, AttackType
 from core.config import JOKENPO_UNITS
 

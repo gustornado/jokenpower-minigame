@@ -1,6 +1,6 @@
 from core.config.types import AttackType, ParticipantType
-from core.aux.attack import Attack
-from core.aux.queue import Queue
+from core.auxiliar.attack import Attack
+from core.auxiliar.queue import Queue
 
 class ConflictManager():
     def __init__(self):

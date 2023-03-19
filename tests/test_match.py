@@ -1,7 +1,7 @@
 from core.platform.platform_pygame import PlatformPygame
 from core.match import Match
 from core.config.types import AttackType, ParticipantType
-from core.aux.attack import Attack
+from core.auxiliar.attack import Attack
 from core.config import JOKENPO_UNITS
 
 # Testes temporariamente desabilitados porque lógica nova de dano foi implementada

@@ -2,7 +2,7 @@
 from core.platform.platform_pygame import PlatformPygame as Platform
 from core.match import Match
 from core.config.types import KeyType
-from core.aux.attack import Attack
+from core.auxiliar.attack import Attack
 
 class Game:
     def __init__(self, platform : Platform):
