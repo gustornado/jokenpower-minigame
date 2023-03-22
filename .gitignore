@@ -2,3 +2,4 @@ __pycache__/
 .pytest_cache/
 env/
 .vscode/
+core/ml/attacks_pattern.csv
